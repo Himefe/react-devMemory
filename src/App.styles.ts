@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-  width: 100%;
+  width: 840px;
   height: 100%;
   min-height: 100vh;
   display: flex;
   place-content: center;
+  margin: 50px auto;
 `;
 
 export const Container = styled.div`
   width: 100%;
-  max-width: 750px;
   height: 100%;
   margin: 0 auto;
   display: flex;
@@ -19,6 +19,13 @@ export const Container = styled.div`
   box-shadow: 0 0 5px 1px #ccc;
   border-radius: 5px;
   margin-top: 80px;
+
+  @media screen and (max-width: 841px) {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 50px;
+  }
 `;
 
 export const Info = styled.div`
@@ -43,7 +50,12 @@ export const GameArea = styled.div`
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  margin-left: 80px;
+  margin-left: 50px;
+
+  @media screen and (max-width: 841px) {
+    margin-left: 0;
+    margin-top: 50px;
+  }
 `;
 
 export const Button = styled.button`
@@ -59,4 +71,8 @@ export const Grid = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
   width: 100%;
+
+  @media screen and (max-width: 841px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;

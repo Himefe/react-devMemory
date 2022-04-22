@@ -12,8 +12,13 @@ export const Container = styled.div<ContainerProps>`
   cursor: pointer;
   border-radius: 5px;
   height: 100px;
+
   background-color: ${(props) =>
     props.backgroundColor ? "#1550FF" : "#E2E3E3"};
+
+  @media screen and (max-width: 841px) {
+    height: 212px;
+  }
 `;
 
 interface IconeProps {
