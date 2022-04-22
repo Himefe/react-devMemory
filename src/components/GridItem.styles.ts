@@ -15,10 +15,6 @@ export const Container = styled.div<ContainerProps>`
 
   background-color: ${(props) =>
     props.backgroundColor ? "#1550FF" : "#E2E3E3"};
-
-  @media screen and (max-width: 841px) {
-    height: 212px;
-  }
 `;
 
 interface IconeProps {

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-  width: 840px;
+  width: 100%;
+  max-width: 840px;
   height: 100%;
   min-height: 100vh;
   display: flex;
@@ -24,7 +25,7 @@ export const Container = styled.div`
     flex-direction: column;
     width: 90%;
     height: auto;
-    padding: 50px;
+    padding: 30px;
   }
 `;
 
